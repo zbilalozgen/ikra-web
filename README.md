@@ -41,6 +41,12 @@ Lint:
 npm run lint
 ```
 
+## Environment Variables
+
+- `NEXT_PUBLIC_SITE_URL` — Absolute URL of the production site (e.g. `https://ikra-web.vercel.app`). Used by Next.js `metadataBase` to resolve Open Graph / Twitter image URLs and the canonical link tag to absolute URLs.
+- Default: `https://ikra-web.vercel.app` (hard-coded fallback in `app/layout.tsx` when the variable is unset).
+- Set in: Vercel project **Settings → Environment Variables**, scoped to Production and Preview environments.
+
 ## Deployment
 
 Production deploys happen automatically on every push to `main` via the Vercel GitHub integration. No manual action required.

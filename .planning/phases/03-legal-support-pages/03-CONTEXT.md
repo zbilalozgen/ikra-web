@@ -33,7 +33,9 @@ Replace the body content of the existing stub routes `/privacy`, `/terms`, `/sup
 ## Implementation Decisions
 
 ### Content Scope & Sourcing (D-21 through D-25)
-- **D-21:** Privacy Policy is **hand-written, app-specific**, covering the actual data flows of the İkra mobile app: Firebase Analytics + Crashlytics + Remote Config (anonymous), Expo Notifications (opt-in verse reminders), Expo Tracking Transparency (iOS ATT prompt), RevenueCat (anonymized subscriber ID for IAP), no user accounts, no PII, no third-party ad networks beyond what RevenueCat needs for subscription receipts. Children's policy note (app not directed at children under 13). Generic GDPR/CCPA mention with contact-email remediation path. NOT a template.
+- **D-21:** Privacy Policy is **hand-written, app-specific**, covering the actual data flows of the İkra mobile app: Firebase Analytics + Crashlytics + Remote Config (anonymous), RevenueCat (subscriptions), Expo Notifications (opt-in), Expo Tracking Transparency (iOS ATT), Google Mobile Ads / AdMob (free-tier ads), AppsFlyer (mobile measurement / attribution). The "premium tier removes ads" feature confirms ads exist. Apple/Google IAP billing is a transactional processor (not advertising). No user accounts, no PII. Children's policy note (app not directed at children under 13). Generic GDPR/CCPA mention with contact-email remediation path. NOT a template.
+
+  > **Correction (post-planning):** Initial CONTEXT scan missed `react-native-google-mobile-ads` and `react-native-appsflyer` in `wip-muslim/package.json`. The planner's source audit caught this; the Privacy Policy correctly discloses all processors. This D-21 text is the corrected truth.
 - **D-22:** Privacy Policy structure: H1 "Privacy Policy", `Last updated: June 1, 2026` line, **Table of Contents** linking to anchors, then H2 sections in this order: (1) Overview, (2) Data we collect (and what we don't), (3) Third-party services (Firebase, RevenueCat, Apple/Google IAP, Expo Notifications), (4) Local storage on your device, (5) Children's privacy, (6) Your rights (EU/UK/California brief), (7) Data retention, (8) Changes to this policy, (9) Contact us.
 - **D-23:** Terms of Service is **hand-written, app-specific**: H1 "Terms of Service", Last-updated date, TOC, sections (1) Acceptance, (2) License to use the App, (3) Acceptable use, (4) Subscriptions and in-app purchases (Apple/Google billing rules), (5) Content & scripture (audio/text not for redistribution), (6) Disclaimer of warranties, (7) Limitation of liability, (8) Governing law — **US/Delaware as generic-safe default** (developer can override at launch), (9) Changes, (10) Termination, (11) Contact.
 - **D-24:** Support page is **static page with `mailto:` contact + FAQ**: H1 "Support", primary contact `mailto:support@ikraapp.com` styled as a button-link, then H2 "Frequently asked" with 5 collapsible-but-render-open FAQ entries: "How do I install the iOS / Android widget?", "Audio isn't playing — what should I check?", "How do I restore my premium purchase?", "Daily verse notifications aren't arriving — how do I fix that?", "How do I report a bug or request a feature?". Each Q in `<h3>` and A in `<p>`. No JS, no `<details>` — open by default so search engines index the answers.
@@ -77,7 +79,9 @@ Replace the body content of the existing stub routes `/privacy`, `/terms`, `/sup
   - `react-native-purchases` — RevenueCat (subscription management, anonymized user ID)
   - `expo-notifications` — verse reminders (opt-in)
   - `expo-tracking-transparency` — iOS ATT permission prompt
-- No advertising SDK detected (AdMob etc.) — premium tier removes "ads" but ad SDK is not in the current package; Privacy Policy can disclose Firebase + RevenueCat as the only third-party data processors.
+  - `react-native-google-mobile-ads` — Google AdMob (free-tier ads; premium tier removes ads)
+  - `react-native-appsflyer` — AppsFlyer mobile attribution / measurement
+- All of the above are present in `wip-muslim/package.json`. Privacy Policy correctly discloses all processors including AdMob and AppsFlyer.
 
 </canonical_refs>
 

@@ -15,7 +15,7 @@ export default function Footer() {
         </p>
 
         {/* Nav links */}
-        <nav className="flex flex-wrap items-center justify-center gap-md">
+        <nav aria-label="Footer" className="flex flex-wrap items-center justify-center gap-md">
           <Link
             href="/privacy"
             className="text-sm text-navy-800 hover:text-gold-500 transition-colors duration-150"

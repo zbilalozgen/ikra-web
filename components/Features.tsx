@@ -59,7 +59,7 @@ export default function Features() {
           {features.map(({ Icon, title, description }) => (
             <Card
               key={title}
-              className="bg-surface-card border border-navy-800/10 rounded-lg p-lg transition-colors duration-fast hover:border-gold-500/30 hover:bg-surface-card-hover"
+              className="bg-surface-card border border-navy-800/10 rounded-lg p-lg ring-0 gap-0 transition-colors duration-fast hover:border-gold-500/30 hover:bg-surface-card-hover"
             >
               <div className="mb-md">
                 <Icon className="w-6 h-6 text-gold-500" />

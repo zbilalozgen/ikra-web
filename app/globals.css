@@ -30,6 +30,10 @@
   --color-gold-900: #5C4B0A;
 
   /* ── Brand — Secondary (Navy) ─────────────────────────────────────── */
+  /* NOTE: navy-50..500 match wip-muslim source-of-truth but share hue with
+     Tailwind's default blue ramp. These lighter shades are unused in Phase 1
+     (only navy-800 is actively used). Pending brand confirmation before use
+     in lighter contexts — may need a desaturated navy-tinted ramp in future. */
   --color-navy-50: #EFF6FF;
   --color-navy-100: #DBEAFE;
   --color-navy-200: #BFDBFE;

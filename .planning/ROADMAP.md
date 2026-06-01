@@ -30,7 +30,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Operator can open the production Vercel URL and the site builds and serves without errors
   4. Production domain is configured, or the Vercel default domain is documented in README
 **Plans**: 2 plans
-  - [ ] 01-01-PLAN.md — Scaffold Next.js + Tailwind v4 with brand `@theme` tokens; skeleton home page; global Footer; stub routes `/privacy`, `/terms`, `/support`
+  - [x] 01-01-PLAN.md — Scaffold Next.js + Tailwind v4 with brand `@theme` tokens; skeleton home page; global Footer; stub routes `/privacy`, `/terms`, `/support`
   - [ ] 01-02-PLAN.md — Git init + GitHub push; Vercel git-push auto-deploy; production URL documented in README
 **UI hint**: yes
 
@@ -82,7 +82,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Deployable Skeleton | 0/2 | Not started | - |
+| 1. Foundation & Deployable Skeleton | 1/2 | In progress | - |
 | 2. Landing Page Content | 0/TBD | Not started | - |
 | 3. Legal & Support Pages | 0/TBD | Not started | - |
 | 4. Polish & SEO Launch-Readiness | 0/TBD | Not started | - |

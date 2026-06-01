@@ -18,26 +18,26 @@ export default function Footer() {
         <nav aria-label="Footer" className="flex flex-wrap items-center justify-center gap-md">
           <Link
             href="/privacy"
-            className="text-sm text-navy-800 hover:text-gold-500 transition-colors duration-150"
+            className="text-sm text-navy-800 hover:text-gold-500 transition-colors duration-fast"
           >
             Privacy Policy
           </Link>
           <Link
             href="/terms"
-            className="text-sm text-navy-800 hover:text-gold-500 transition-colors duration-150"
+            className="text-sm text-navy-800 hover:text-gold-500 transition-colors duration-fast"
           >
             Terms of Service
           </Link>
           <Link
             href="/support"
-            className="text-sm text-navy-800 hover:text-gold-500 transition-colors duration-150"
+            className="text-sm text-navy-800 hover:text-gold-500 transition-colors duration-fast"
           >
             Support
           </Link>
         </nav>
 
         {/* Copyright */}
-        <p className="text-xs text-navy-800/60 mt-sm">
+        <p className="text-sm text-navy-800/60 mt-sm">
           © 2025 İkra. All rights reserved.
         </p>
       </div>

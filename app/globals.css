@@ -54,6 +54,7 @@
   --color-surface-card-hover: #FFFAF2;
 
   /* ── Spacing Aliases ──────────────────────────────────────────────── */
+  --spacing-xs:      4px;    /* gap-xs, mt-xs, etc. (UI-SPEC scale) */
   --spacing-sm:      8px;    /* gap-sm, mt-sm, mb-sm, etc. */
   --spacing-md:     16px;    /* gap-md, px-md, py-md, etc. */
   --spacing-lg:     24px;    /* gap-lg, px-lg, py-lg, etc. */

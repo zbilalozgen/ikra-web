@@ -50,7 +50,15 @@
   --color-surface-card-hover: #FFFAF2;
 
   /* ── Spacing Aliases ──────────────────────────────────────────────── */
-  --spacing-touch: 44px;
+  --spacing-sm:      8px;    /* gap-sm, mt-sm, mb-sm, etc. */
+  --spacing-md:     16px;    /* gap-md, px-md, py-md, etc. */
+  --spacing-lg:     24px;    /* gap-lg, px-lg, py-lg, etc. */
+  --spacing-xl:     32px;    /* py-xl, etc. */
+  --spacing-2xl:    48px;
+  --spacing-3xl:    64px;
+  --spacing-screen: 24px;    /* px-screen — horizontal page inset */
+  --spacing-section: 64px;   /* py-section — vertical section padding */
+  --spacing-touch:  44px;    /* min-h-touch */
 
   /* ── Transition Duration Aliases ──────────────────────────────────── */
   --transition-duration-fast: 150ms;

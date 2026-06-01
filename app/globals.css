@@ -157,9 +157,43 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden;
   }
   html {
     @apply font-sans;
+  }
+}
+
+/* ── Motion: Hero fade-in-up ──────────────────────────────────────────── */
+@keyframes ikra-fade-in-up {
+  0% { opacity: 0; transform: translateY(12px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+[data-motion="hero-fade"] {
+  animation: ikra-fade-in-up 500ms ease-out both;
+}
+
+/* ── Motion: Feature card hover scale + gold ring ─────────────────────── */
+[data-motion="feature-card"] {
+  transition: transform 150ms ease-out, box-shadow 150ms ease-out, border-color 150ms ease-out;
+}
+[data-motion="feature-card"]:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 0 1px rgb(212 168 67 / 0.20);
+}
+
+/* ── Reduced motion: short-circuit animation and transitions ──────────── */
+@media (prefers-reduced-motion: reduce) {
+  [data-motion="hero-fade"] {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+  }
+  [data-motion="feature-card"] {
+    transition-duration: 0ms !important;
+  }
+  [data-motion="feature-card"]:hover {
+    transform: none !important;
+    box-shadow: none !important;
   }
 }

@@ -65,5 +65,5 @@
   --spacing-touch:  44px;    /* min-h-touch */
 
   /* ── Transition Duration Aliases ──────────────────────────────────── */
-  --transition-duration-fast: 150ms;
+  --duration-fast: 150ms;  /* Use duration-fast utility; matches Tailwind v4 naming */
 }

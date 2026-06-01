@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — İkra",
+  title: "Terms of Service",
   description:
     "The terms that govern your use of the İkra mobile app, including license grant, subscriptions, and limitations.",
+  alternates: { canonical: "/terms" },
 };
 
 export default function TermsPage() {

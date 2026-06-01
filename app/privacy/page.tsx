@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — İkra",
+  title: "Privacy Policy",
   description:
     "How İkra collects, uses, and protects your data. The app uses anonymous analytics only; this website collects nothing.",
+  alternates: { canonical: "/privacy" },
 };
 
 export default function PrivacyPage() {

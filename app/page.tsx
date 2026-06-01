@@ -5,7 +5,7 @@ import Showcase from "@/components/Showcase";
 import Stats from "@/components/Stats";
 
 export const metadata: Metadata = {
-  title: "İkra — Quran Verses & Sahih Hadith Widget App",
+  title: { absolute: "İkra — Quran Verses & Sahih Hadith Widget App" },
   alternates: { canonical: "/" },
 };
 

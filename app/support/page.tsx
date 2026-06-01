@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Support — İkra",
+  title: "Support",
   description:
     "Get help with the İkra app — widget install, audio playback, purchase restore, notifications, and bug reports.",
+  alternates: { canonical: "/support" },
 };
 
 export default function SupportPage() {

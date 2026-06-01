@@ -45,7 +45,7 @@ npm run lint
 
 Production deploys happen automatically on every push to `main` via the Vercel GitHub integration. No manual action required.
 
-**Production URL:** https://ikra-web.vercel.app
+**Production URL:** https://ikra-web.vercel.app/ (live — HTTP/2 200)
 
 ## Brand
 

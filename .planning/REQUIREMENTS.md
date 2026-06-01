@@ -20,8 +20,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [ ] **UI-01**: Site uses İkra's brand palette (emerald `#006B3F`, gold `#D4A843`, navy `#1B2A4A`) via Tailwind tokens
 - [ ] **UI-02**: Site supports dark mode matching the app's dark palette (`#0A1F0E`)
-- [ ] **UI-03**: Layout is fully responsive across mobile, tablet, and desktop
-- [ ] **UI-04**: Interactions feel polished (tasteful animations/transitions, no flat/static feel)
+- [x] **UI-03**: Layout is fully responsive across mobile, tablet, and desktop
+- [x] **UI-04**: Interactions feel polished (tasteful animations/transitions, no flat/static feel)
 
 ### Legal & Support
 
@@ -81,8 +81,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | LAND-06 | Phase 1 | Pending |
 | UI-01 | Phase 1 | Pending |
 | UI-02 | Phase 1 | Pending |
-| UI-03 | Phase 4 | Pending |
-| UI-04 | Phase 4 | Pending |
+| UI-03 | Phase 4 | Complete |
+| UI-04 | Phase 4 | Complete |
 | LEGAL-01 | Phase 3 | Complete |
 | LEGAL-02 | Phase 3 | Complete |
 | LEGAL-03 | Phase 3 | Complete |

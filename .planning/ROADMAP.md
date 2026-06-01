@@ -14,8 +14,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation & Deployable Skeleton** - Brand-themed Next.js + Tailwind shell live on Vercel
 - [x] **Phase 2: Landing Page Content** - Hero, features, screenshots, store badges, and stats (completed 2026-06-01)
-- [ ] **Phase 3: Legal & Support Pages** - Privacy Policy, Terms of Service, and Support/Contact
-- [ ] **Phase 4: Polish & SEO Launch-Readiness** - Responsive QA, motion, meta/OG, and sitemap
+- [x] **Phase 3: Legal & Support Pages** - Privacy Policy, Terms of Service, and Support/Contact (completed 2026-06-01)
+- [x] **Phase 4: Polish & SEO Launch-Readiness** - Responsive QA, motion, meta/OG, and sitemap (completed 2026-06-01)
 
 ## Phase Details
 
@@ -62,9 +62,9 @@ Decimal phases appear between their surrounding integers in numeric order.
   4. Footer links from Phase 1 resolve to these live pages (no broken or placeholder routes)
 **Plans**: 4 plans
   - [x] 03-01-PLAN.md — Install @tailwindcss/typography plugin and register via @plugin directive in app/globals.css (Wave 1 setup; unblocks Wave 2)
-  - [ ] 03-02-PLAN.md — Write Privacy Policy at app/privacy/page.tsx — 9 H2 sections, TOC, app-specific disclosures (Firebase, RevenueCat, Expo, AdMob, AppsFlyer), mailto contact, cross-links (LEGAL-01)
-  - [ ] 03-03-PLAN.md — Write Terms of Service at app/terms/page.tsx — 11 H2 sections, TOC, Apple/Google billing rules, Delaware governing law, cross-links (LEGAL-02)
-  - [ ] 03-04-PLAN.md — Write Support page at app/support/page.tsx — mailto button-link, 5 FAQ Q+A, cross-links (LEGAL-03)
+  - [x] 03-02-PLAN.md — Write Privacy Policy at app/privacy/page.tsx — 9 H2 sections, TOC, app-specific disclosures (Firebase, RevenueCat, Expo, AdMob, AppsFlyer), mailto contact, cross-links (LEGAL-01)
+  - [x] 03-03-PLAN.md — Write Terms of Service at app/terms/page.tsx — 11 H2 sections, TOC, Apple/Google billing rules, Delaware governing law, cross-links (LEGAL-02)
+  - [x] 03-04-PLAN.md — Write Support page at app/support/page.tsx — mailto button-link, 5 FAQ Q+A, cross-links (LEGAL-03)
 **UI hint**: yes
 
 ### Phase 4: Polish & SEO Launch-Readiness
@@ -78,7 +78,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Each page exposes an appropriate title and meta description
   4. Pages render correct Open Graph / Twitter share cards with brand imagery when shared
   5. Site serves a valid sitemap and robots.txt
-**Plans**: TBD
+**Plans**: 4 plans
+  - [x] 04-01-PLAN.md — SEO metadata foundation: app/layout.tsx defaults (title template, description, metadataBase, applicationName, viewport themeColor, openGraph, twitter), app/page.tsx explicit metadata + canonical, NEXT_PUBLIC_SITE_URL README doc
+  - [x] 04-02-PLAN.md — Dynamic Open Graph image at app/opengraph-image.tsx via next/og ImageResponse (1200×630 emerald brand card with wordmark, tagline, watermark glyph)
+  - [x] 04-03-PLAN.md — app/sitemap.ts (4 URLs with priorities) and app/robots.ts (allow-all + sitemap pointer)
+  - [x] 04-04-PLAN.md — CSS-only motion (hero fade-in-up, feature card scale+ring on hover), prefers-reduced-motion override, body overflow-x-hidden, responsive QA at 360/768/1024/1440, optional Lighthouse mobile run
 **UI hint**: yes
 
 ## Progress
@@ -90,5 +94,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 |-------|----------------|--------|-----------|
 | 1. Foundation & Deployable Skeleton | 2/2 | Complete | 2026-06-01 |
 | 2. Landing Page Content | 2/2 | Complete   | 2026-06-01 |
-| 3. Legal & Support Pages | 1/4 | In Progress|  |
-| 4. Polish & SEO Launch-Readiness | 0/TBD | Not started | - |
+| 3. Legal & Support Pages | 4/4 | Complete   | 2026-06-01 |
+| 4. Polish & SEO Launch-Readiness | 4/4 | Complete   | 2026-06-01 |

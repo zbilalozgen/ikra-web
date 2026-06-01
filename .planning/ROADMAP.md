@@ -45,7 +45,9 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Visitor sees an app screenshot / visual showcase of the product
   4. Visitor sees App Store and Google Play store badges (placeholder links until launch)
   5. Visitor sees a stats / social-proof section (6 languages, 6236 verses, 6 reciters, 99 Names, offline-first, free-forever reading)
-**Plans**: TBD
+**Plans**: 2 plans
+  - [ ] 02-01-PLAN.md — Initialize shadcn/ui (Tailwind v4, button + card), install lucide-react, copy iOS screenshots + watermark glyph into public/
+  - [ ] 02-02-PLAN.md — Build Hero / Features / Showcase / Stats + StoreBadges; replace app/page.tsx body
 **UI hint**: yes
 
 ### Phase 3: Legal & Support Pages

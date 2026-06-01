@@ -5,6 +5,19 @@ export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 export default async function Image() {
+  // Fetch Inter Bold for Satori font rendering
+  let interBoldData: ArrayBuffer | undefined;
+  try {
+    const interRes = await fetch(
+      new URL("https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYAZJhiI2B.woff2")
+    );
+    if (interRes.ok) {
+      interBoldData = await interRes.arrayBuffer();
+    }
+  } catch {
+    // Fall back to Satori default sans-serif if fetch fails
+  }
+
   // Fetch watermark glyph and encode as base64 data URI for Satori compatibility
   let watermarkSrc: string | null = null;
   try {
@@ -47,7 +60,7 @@ export default async function Image() {
               position: "absolute",
               top: 0,
               right: 0,
-              opacity: 0.18,
+              opacity: 0.10,
             }}
           />
         )}
@@ -60,6 +73,7 @@ export default async function Image() {
             color: "#FFFFFF",
             letterSpacing: -2,
             lineHeight: 1,
+            fontFamily: "Inter",
           }}
         >
           İkra
@@ -73,12 +87,27 @@ export default async function Image() {
             color: "#F2F2F7",
             marginTop: 24,
             opacity: 0.9,
+            fontFamily: "Inter",
           }}
         >
-          Quran Verses &amp; Sahih Hadith Widget App
+          Quran Verses & Sahih Hadith Widget App
         </div>
       </div>
     ),
-    { ...size }
+    {
+      ...size,
+      ...(interBoldData
+        ? {
+            fonts: [
+              {
+                name: "Inter",
+                data: interBoldData,
+                weight: 700 as const,
+                style: "normal" as const,
+              },
+            ],
+          }
+        : {}),
+    }
   );
 }

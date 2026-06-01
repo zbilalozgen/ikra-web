@@ -25,9 +25,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Legal & Support
 
-- [ ] **LEGAL-01**: Visitor can read a Privacy Policy page (App Store / Play submission requirement)
-- [ ] **LEGAL-02**: Visitor can read a Terms of Service page
-- [ ] **LEGAL-03**: Visitor can reach a Support / Contact page (App Store / Play submission requirement)
+- [x] **LEGAL-01**: Visitor can read a Privacy Policy page (App Store / Play submission requirement)
+- [x] **LEGAL-02**: Visitor can read a Terms of Service page
+- [x] **LEGAL-03**: Visitor can reach a Support / Contact page (App Store / Play submission requirement)
 
 ### SEO
 
@@ -83,9 +83,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | UI-02 | Phase 1 | Pending |
 | UI-03 | Phase 4 | Pending |
 | UI-04 | Phase 4 | Pending |
-| LEGAL-01 | Phase 3 | Pending |
-| LEGAL-02 | Phase 3 | Pending |
-| LEGAL-03 | Phase 3 | Pending |
+| LEGAL-01 | Phase 3 | Complete |
+| LEGAL-02 | Phase 3 | Complete |
+| LEGAL-03 | Phase 3 | Complete |
 | SEO-01 | Phase 4 | Pending |
 | SEO-02 | Phase 4 | Pending |
 | SEO-03 | Phase 4 | Pending |

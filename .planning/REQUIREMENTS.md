@@ -14,11 +14,11 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **LAND-03**: Visitor sees an app screenshot / visual showcase of the product
 - [x] **LAND-04**: Visitor sees App Store and Google Play store badges (placeholder links until launch)
 - [x] **LAND-05**: Visitor sees a stats/social-proof section (6 languages, 6236 verses, 6 reciters, 99 Names, offline-first, free-forever reading)
-- [ ] **LAND-06**: Visitor can navigate via a footer linking to Privacy, Terms, and Support, with brand mark
+- [x] **LAND-06**: Visitor can navigate via a footer linking to Privacy, Terms, and Support, with brand mark
 
 ### Branding & UI
 
-- [ ] **UI-01**: Site uses İkra's brand palette (emerald `#006B3F`, gold `#D4A843`, navy `#1B2A4A`) via Tailwind tokens
+- [x] **UI-01**: Site uses İkra's brand palette (emerald `#006B3F`, gold `#D4A843`, navy `#1B2A4A`) via Tailwind tokens
 - [ ] **UI-02**: Site supports dark mode matching the app's dark palette (`#0A1F0E`)
 - [x] **UI-03**: Layout is fully responsive across mobile, tablet, and desktop
 - [x] **UI-04**: Interactions feel polished (tasteful animations/transitions, no flat/static feel)
@@ -31,14 +31,14 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### SEO
 
-- [ ] **SEO-01**: Each page has appropriate title and meta description
-- [ ] **SEO-02**: Pages expose Open Graph / Twitter share cards with brand imagery
-- [ ] **SEO-03**: Site provides a sitemap and robots.txt
+- [x] **SEO-01**: Each page has appropriate title and meta description
+- [x] **SEO-02**: Pages expose Open Graph / Twitter share cards with brand imagery
+- [x] **SEO-03**: Site provides a sitemap and robots.txt
 
 ### Deployment
 
-- [ ] **DEPLOY-01**: Site is deployed to Vercel with a working production build
-- [ ] **DEPLOY-02**: Production domain is configured (or Vercel default domain documented)
+- [x] **DEPLOY-01**: Site is deployed to Vercel with a working production build
+- [x] **DEPLOY-02**: Production domain is configured (or Vercel default domain documented)
 
 ## v2 Requirements
 
@@ -78,19 +78,19 @@ Which phases cover which requirements. Updated during roadmap creation.
 | LAND-03 | Phase 2 | Complete |
 | LAND-04 | Phase 2 | Complete |
 | LAND-05 | Phase 2 | Complete |
-| LAND-06 | Phase 1 | Pending |
-| UI-01 | Phase 1 | Pending |
+| LAND-06 | Phase 1 | Complete |
+| UI-01 | Phase 1 | Complete |
 | UI-02 | Phase 1 | Pending |
 | UI-03 | Phase 4 | Complete |
 | UI-04 | Phase 4 | Complete |
 | LEGAL-01 | Phase 3 | Complete |
 | LEGAL-02 | Phase 3 | Complete |
 | LEGAL-03 | Phase 3 | Complete |
-| SEO-01 | Phase 4 | Pending |
-| SEO-02 | Phase 4 | Pending |
-| SEO-03 | Phase 4 | Pending |
-| DEPLOY-01 | Phase 1 | Pending |
-| DEPLOY-02 | Phase 1 | Pending |
+| SEO-01 | Phase 4 | Complete |
+| SEO-02 | Phase 4 | Complete |
+| SEO-03 | Phase 4 | Complete |
+| DEPLOY-01 | Phase 1 | Complete |
+| DEPLOY-02 | Phase 1 | Complete |
 
 **Coverage:**
 - v1 requirements: 17 total

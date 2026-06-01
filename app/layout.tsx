@@ -11,7 +11,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? "https://ikra-web.vercel.app"
+    (process.env.NEXT_PUBLIC_SITE_URL ?? "https://ikra-web.vercel.app").replace(/\/$/, "")
   ),
   title: {
     default: "İkra — Quran Verses & Sahih Hadith Widget App",

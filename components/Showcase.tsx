@@ -34,8 +34,8 @@ export default function Showcase() {
         <h2 className="text-xl font-semibold leading-tight text-navy-800 text-center mb-xl">
           See It in Action
         </h2>
-        {/* Mobile: horizontal snap strip (hidden on lg+) */}
-        <div className="flex overflow-x-auto snap-x snap-mandatory gap-md pb-sm lg:hidden">
+        {/* Mobile: horizontal snap strip (hidden on lg+) — aria-hidden; desktop grid is the accessible copy */}
+        <div aria-hidden="true" className="flex overflow-x-auto snap-x snap-mandatory gap-md pb-sm lg:hidden">
           {screenshots.map(({ src, alt }) => (
             <PhoneFrame key={src} src={src} alt={alt} />
           ))}

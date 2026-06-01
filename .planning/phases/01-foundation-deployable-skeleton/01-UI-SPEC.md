@@ -62,24 +62,18 @@ Exceptions: Footer brand mark touch target: minimum 44px height (accessibility r
 
 ## Color
 
+> Light-mode only per **D-04** (dark mode dropped from v1 scope; see CONTEXT.md `01-CONTEXT.md`).
+
 | Role | Value | Usage |
 |------|-------|-------|
-| Dominant (60%) | `#0A1F0E` (dark) / `#F2F2F7` (light) | Page background, body surface |
-| Secondary (30%) | `#1A3B22` (dark card) / `#FFFFFF` (light card) | Footer background, nav surface |
+| Dominant (60%) | `#F2F2F7` (cream / light) | Page background, body surface |
+| Secondary (30%) | `#FFFFFF` (light card) | Footer background, nav surface |
 | Accent (10%) | `#D4A843` (gold-500) | Footer brand mark underline, active/hover state on footer links |
+| Brand primary | `#006B3F` (emerald-600) | Skeleton `<h1>`, brand text |
+| Brand secondary | `#1B2A4A` (navy-800) | Footer bottom strip or border |
 | Destructive | `#DC2626` (error) | Not used in Phase 1 |
 
 **Accent reserved for:** footer brand mark decorative element, footer link hover underline. No other usage in Phase 1.
-
-**Dark mode tokens (sourced from app `src/theme/colors.ts`):**
-
-| Token | Value | Usage |
-|-------|-------|-------|
-| dark.bg | `#0A1F0E` | `<html>` dark background |
-| dark.card | `#1A3B22` | Footer surface in dark mode |
-| dark.border | `#3A5E42` | Footer top border |
-| dark.text-primary | `#F0FDF4` | Footer text, nav links |
-| dark.text-secondary | `#BBF7D0` | Footer subdued text (copyright, secondary links) |
 
 **Light mode tokens:**
 
@@ -89,8 +83,9 @@ Exceptions: Footer brand mark touch target: minimum 44px height (accessibility r
 | surface.card | `#FFFFFF` | Footer surface |
 | emerald-600 | `#006B3F` | Primary brand color — skeleton `<h1>`, any brand text |
 | navy-800 | `#1B2A4A` | Secondary brand color — footer bottom strip or border |
+| gold-500 | `#D4A843` | Accent — footer hover, brand mark underline |
 
-**Tailwind config:** Replicate the full `emerald`, `gold`, `navy`, `dark`, and `surface` palettes from the app's `tailwind.config.js` verbatim. Do not introduce new color values.
+**Tailwind config:** Replicate the `emerald`, `gold`, `navy`, and `surface` palettes from the app's `tailwind.config.js` verbatim. Dark palette is **not** ported in Phase 1 (D-04). Do not introduce new color values.
 
 ---
 
@@ -120,10 +115,11 @@ Phase 1 interactions are minimal:
 
 | Interaction | Behaviour |
 |-------------|-----------|
-| Dark mode | Respects `prefers-color-scheme` via Tailwind `dark:` variants; no manual toggle in Phase 1 (toggle is Phase 2+ scope) |
 | Footer links | Standard `<a>` navigation; `hover:text-gold-500` transition at 150ms (`transition-fast`); no JS required |
 | Brand mark | Static text or SVG logotype; no interaction |
 | Vercel deployment | Static build (`next build`); no server-side state |
+
+> Dark mode interaction removed per **D-04**. Site is light-mode only in v1.
 
 ---
 
@@ -141,10 +137,11 @@ Phase 1 interactions are minimal:
 | Token Group | Source File |
 |-------------|-------------|
 | emerald, gold, navy palettes | `/Users/zbilalozgen/repos/wip-muslim/tailwind.config.js` |
-| dark.* surface tokens | `/Users/zbilalozgen/repos/wip-muslim/tailwind.config.js` |
 | surface.* tokens | `/Users/zbilalozgen/repos/wip-muslim/tailwind.config.js` |
 | spacing.touch (44px) | `/Users/zbilalozgen/repos/wip-muslim/tailwind.config.js` |
 | Brand hex values | `CLAUDE.md` constraints + `/Users/zbilalozgen/repos/wip-muslim/src/theme/colors.ts` |
+
+> `dark.*` tokens removed per **D-04** (dark mode out of v1 scope).
 
 ---
 

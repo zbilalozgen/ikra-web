@@ -2,7 +2,7 @@
 
 ## Overview
 
-İkra Web is a single-page-led marketing site with legal/support pages required for App Store and Google Play submission. The journey starts by standing up a brand-accurate, deployable Next.js skeleton on Vercel (foundation you can see live early), then layers in the full landing-page content, the legally-required Privacy/Terms/Support pages, and finally responsive polish, tasteful motion, and SEO so the site is launch-ready. Built with Next.js App Router + Tailwind, English-only, dark-mode-friendly, mirroring the İkra app's emerald/gold/navy identity.
+İkra Web is a single-page-led marketing site with legal/support pages required for App Store and Google Play submission. The journey starts by standing up a brand-accurate, deployable Next.js skeleton on Vercel (foundation you can see live early), then layers in the full landing-page content, the legally-required Privacy/Terms/Support pages, and finally responsive polish, tasteful motion, and SEO so the site is launch-ready. Built with Next.js App Router + Tailwind, English-only, mirroring the İkra app's emerald/gold/navy identity.
 
 ## Phases
 
@@ -20,17 +20,18 @@ Decimal phases appear between their surrounding integers in numeric order.
 ## Phase Details
 
 ### Phase 1: Foundation & Deployable Skeleton
-**Goal**: A brand-accurate Next.js App Router + Tailwind site shell is live on Vercel, with İkra's color palette, dark mode, and a global footer in place — so every later phase builds on a deployable, on-brand foundation.
+**Goal**: A brand-accurate Next.js App Router + Tailwind site shell is live on Vercel, with İkra's color palette and a global footer linking to Privacy/Terms/Support stub routes in place — so every later phase builds on a deployable, on-brand foundation.
 **Mode:** mvp
 **Depends on**: Nothing (first phase)
-**Requirements**: UI-01, UI-02, LAND-06, DEPLOY-01, DEPLOY-02
+**Requirements**: UI-01, ~~UI-02~~ (deferred per D-04), LAND-06, DEPLOY-01, DEPLOY-02
 **Success Criteria** (what must be TRUE):
-  1. Visitor loads the site and sees İkra's brand palette applied (emerald `#006B3F`, gold `#D4A843`, navy `#1B2A4A`) via Tailwind tokens reused from the app
-  2. Visitor can toggle/observe dark mode rendering with the app's dark background (`#0A1F0E`)
-  3. Visitor sees a global footer with the İkra brand mark and links to Privacy, Terms, and Support routes (even as placeholders)
-  4. Operator can open the production Vercel URL and the site builds and serves without errors
-  5. Production domain is configured, or the Vercel default domain is documented
-**Plans**: TBD
+  1. Visitor loads the site and sees İkra's brand palette applied (emerald `#006B3F`, gold `#D4A843`, navy `#1B2A4A`, cream `#F2F2F7`) via Tailwind v4 `@theme` tokens reused from the app
+  2. Visitor sees a global footer with the İkra brand mark and links to Privacy, Terms, and Support routes (real stub pages, not 404s)
+  3. Operator can open the production Vercel URL and the site builds and serves without errors
+  4. Production domain is configured, or the Vercel default domain is documented in README
+**Plans**: 2 plans
+  - [ ] 01-01-PLAN.md — Scaffold Next.js + Tailwind v4 with brand `@theme` tokens; skeleton home page; global Footer; stub routes `/privacy`, `/terms`, `/support`
+  - [ ] 01-02-PLAN.md — Git init + GitHub push; Vercel git-push auto-deploy; production URL documented in README
 **UI hint**: yes
 
 ### Phase 2: Landing Page Content
@@ -81,7 +82,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Deployable Skeleton | 0/TBD | Not started | - |
+| 1. Foundation & Deployable Skeleton | 0/2 | Not started | - |
 | 2. Landing Page Content | 0/TBD | Not started | - |
 | 3. Legal & Support Pages | 0/TBD | Not started | - |
 | 4. Polish & SEO Launch-Readiness | 0/TBD | Not started | - |

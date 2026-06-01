@@ -60,7 +60,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. Visitor can open and read a Terms of Service page
   3. Visitor can reach a Support / Contact page with a working way to get help
   4. Footer links from Phase 1 resolve to these live pages (no broken or placeholder routes)
-**Plans**: TBD
+**Plans**: 4 plans
+  - [ ] 03-01-PLAN.md — Install @tailwindcss/typography plugin and register via @plugin directive in app/globals.css (Wave 1 setup; unblocks Wave 2)
+  - [ ] 03-02-PLAN.md — Write Privacy Policy at app/privacy/page.tsx — 9 H2 sections, TOC, app-specific disclosures (Firebase, RevenueCat, Expo, AdMob, AppsFlyer), mailto contact, cross-links (LEGAL-01)
+  - [ ] 03-03-PLAN.md — Write Terms of Service at app/terms/page.tsx — 11 H2 sections, TOC, Apple/Google billing rules, Delaware governing law, cross-links (LEGAL-02)
+  - [ ] 03-04-PLAN.md — Write Support page at app/support/page.tsx — mailto button-link, 5 FAQ Q+A, cross-links (LEGAL-03)
 **UI hint**: yes
 
 ### Phase 4: Polish & SEO Launch-Readiness
@@ -86,5 +90,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 |-------|----------------|--------|-----------|
 | 1. Foundation & Deployable Skeleton | 2/2 | Complete | 2026-06-01 |
 | 2. Landing Page Content | 2/2 | Complete   | 2026-06-01 |
-| 3. Legal & Support Pages | 0/TBD | Not started | - |
+| 3. Legal & Support Pages | 0/4 | Not started | - |
 | 4. Polish & SEO Launch-Readiness | 0/TBD | Not started | - |

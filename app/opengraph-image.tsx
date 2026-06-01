@@ -5,11 +5,12 @@ export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 export default async function Image() {
-  // Fetch Inter Bold for Satori font rendering
+  // Fetch Inter Bold for Satori font rendering.
+  // Must be woff (v1) — Satori does not support woff2.
   let interBoldData: ArrayBuffer | undefined;
   try {
     const interRes = await fetch(
-      new URL("https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuFuYAZJhiI2B.woff2")
+      new URL("https://github.com/rsms/inter/raw/master/docs/font-files/Inter-Bold.woff", import.meta.url)
     );
     if (interRes.ok) {
       interBoldData = await interRes.arrayBuffer();

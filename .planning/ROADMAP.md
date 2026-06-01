@@ -13,7 +13,7 @@
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation & Deployable Skeleton** - Brand-themed Next.js + Tailwind shell live on Vercel
-- [ ] **Phase 2: Landing Page Content** - Hero, features, screenshots, store badges, and stats
+- [x] **Phase 2: Landing Page Content** - Hero, features, screenshots, store badges, and stats (completed 2026-06-01)
 - [ ] **Phase 3: Legal & Support Pages** - Privacy Policy, Terms of Service, and Support/Contact
 - [ ] **Phase 4: Polish & SEO Launch-Readiness** - Responsive QA, motion, meta/OG, and sitemap
 
@@ -47,7 +47,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   5. Visitor sees a stats / social-proof section (6 languages, 6236 verses, 6 reciters, 99 Names, offline-first, free-forever reading)
 **Plans**: 2 plans
   - [x] 02-01-PLAN.md — Initialize shadcn/ui (Tailwind v4, button + card), install lucide-react, copy iOS screenshots + watermark glyph into public/
-  - [ ] 02-02-PLAN.md — Build Hero / Features / Showcase / Stats + StoreBadges; replace app/page.tsx body
+  - [x] 02-02-PLAN.md — Build Hero / Features / Showcase / Stats + StoreBadges; replace app/page.tsx body
 **UI hint**: yes
 
 ### Phase 3: Legal & Support Pages
@@ -85,6 +85,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Deployable Skeleton | 2/2 | Complete | 2026-06-01 |
-| 2. Landing Page Content | 1/2 | In Progress|  |
+| 2. Landing Page Content | 2/2 | Complete   | 2026-06-01 |
 | 3. Legal & Support Pages | 0/TBD | Not started | - |
 | 4. Polish & SEO Launch-Readiness | 0/TBD | Not started | - |

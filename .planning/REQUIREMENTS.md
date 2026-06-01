@@ -11,8 +11,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [ ] **LAND-01**: Visitor sees a hero section with the İkra name, tagline, app visual, and a primary call-to-action
 - [ ] **LAND-02**: Visitor can read a features section covering core capabilities (lock/home screen widgets, multi-reciter audio, Esmaül Hüsna, prayer times & qibla, social share templates, offline-first)
-- [ ] **LAND-03**: Visitor sees an app screenshot / visual showcase of the product
-- [ ] **LAND-04**: Visitor sees App Store and Google Play store badges (placeholder links until launch)
+- [x] **LAND-03**: Visitor sees an app screenshot / visual showcase of the product
+- [x] **LAND-04**: Visitor sees App Store and Google Play store badges (placeholder links until launch)
 - [ ] **LAND-05**: Visitor sees a stats/social-proof section (6 languages, 6236 verses, 6 reciters, 99 Names, offline-first, free-forever reading)
 - [ ] **LAND-06**: Visitor can navigate via a footer linking to Privacy, Terms, and Support, with brand mark
 
@@ -75,8 +75,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 |-------------|-------|--------|
 | LAND-01 | Phase 2 | Pending |
 | LAND-02 | Phase 2 | Pending |
-| LAND-03 | Phase 2 | Pending |
-| LAND-04 | Phase 2 | Pending |
+| LAND-03 | Phase 2 | Complete |
+| LAND-04 | Phase 2 | Complete |
 | LAND-05 | Phase 2 | Pending |
 | LAND-06 | Phase 1 | Pending |
 | UI-01 | Phase 1 | Pending |

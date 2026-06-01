@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
 @theme {
+  /* ── Font Family ──────────────────────────────────────────────────── */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
   /* ── Brand — Primary (Emerald Green) ──────────────────────────────── */
   --color-emerald-50: #ECFDF5;
   --color-emerald-100: #D1FAE5;

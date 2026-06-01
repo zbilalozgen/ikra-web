@@ -15,10 +15,10 @@ export default function Hero() {
               Authentic verses and Sahih hadith, refreshed throughout the day — quietly present on your home and lock screens.
             </p>
             {/* StoreBadges row */}
-            <div className="flex flex-wrap justify-center md:justify-start gap-md mt-xl">
+            <nav aria-label="Download İkra" className="flex flex-wrap justify-center md:justify-start gap-md mt-xl">
               <AppStoreBadge />
               <GooglePlayBadge />
-            </div>
+            </nav>
           </div>
           {/* Right column: tilted phone image */}
           <div className="flex justify-center md:justify-end">

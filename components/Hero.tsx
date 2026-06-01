@@ -3,7 +3,7 @@ import { AppStoreBadge, GooglePlayBadge } from "@/components/StoreBadges";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden py-section">
+    <section className="relative overflow-hidden py-section bg-cream">
       <div className="max-w-6xl mx-auto px-screen">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-xl items-center">
           {/* Left column: copy + badges */}

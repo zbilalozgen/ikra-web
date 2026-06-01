@@ -4,13 +4,13 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Privacy Policy — İkra",
   description:
-    "How İkra collects, uses, and protects your data — covering the iOS and Android app, this website, and third-party services.",
+    "How İkra collects, uses, and protects your data. The app uses anonymous analytics only; this website collects nothing.",
 };
 
 export default function PrivacyPage() {
   return (
     <>
-      <article className="prose prose-headings:text-emerald-600 prose-headings:font-semibold prose-p:text-navy-800 prose-li:text-navy-800 prose-a:text-gold-500 prose-a:no-underline hover:prose-a:underline prose-a:underline-offset-4 hover:prose-a:text-emerald-600 max-w-3xl mx-auto px-screen py-section">
+      <article className="prose max-w-none prose-headings:text-emerald-600 prose-headings:font-semibold prose-h3:text-navy-800 prose-p:text-navy-800 prose-li:text-navy-800 prose-a:text-gold-500 prose-a:underline prose-a:underline-offset-4 hover:prose-a:text-emerald-600 max-w-3xl mx-auto px-screen py-section">
         <h1>Privacy Policy</h1>
         <p className="not-prose text-sm text-navy-800/60 mt-xs">
           Last updated: June 1, 2026

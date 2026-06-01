@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function TermsPage() {
   return (
     <>
-      <article className="prose prose-headings:text-emerald-600 prose-headings:font-semibold prose-p:text-navy-800 prose-li:text-navy-800 prose-a:text-gold-500 prose-a:no-underline hover:prose-a:underline prose-a:underline-offset-4 hover:prose-a:text-emerald-600 max-w-3xl mx-auto px-screen py-section">
+      <article className="prose max-w-none prose-headings:text-emerald-600 prose-headings:font-semibold prose-h3:text-navy-800 prose-p:text-navy-800 prose-li:text-navy-800 prose-a:text-gold-500 prose-a:underline prose-a:underline-offset-4 hover:prose-a:text-emerald-600 max-w-3xl mx-auto px-screen py-section">
         <h1>Terms of Service</h1>
         <p className="not-prose text-sm text-navy-800/60 mt-xs">
           Last updated: June 1, 2026
@@ -262,7 +262,7 @@ export default function TermsPage() {
           Privacy Policy
         </Link>
         <span aria-hidden="true" className="text-gold-500">
-          ·
+          &middot;
         </span>
         <Link
           href="/support"
@@ -271,7 +271,7 @@ export default function TermsPage() {
           Support
         </Link>
         <span aria-hidden="true" className="text-gold-500">
-          ·
+          &middot;
         </span>
         <Link
           href="/"

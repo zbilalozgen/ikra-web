@@ -60,7 +60,7 @@ export default function Features() {
             <Card
               key={title}
               data-motion="feature-card"
-              className="bg-surface-card border border-navy-800/10 rounded-lg p-lg ring-0 gap-0 transition-colors duration-fast hover:border-gold-500/30 hover:bg-surface-card-hover"
+              className="bg-surface-card border border-navy-800/10 rounded-lg p-lg ring-0 gap-0 hover:border-gold-500/30 hover:bg-surface-card-hover"
             >
               <div className="mb-md">
                 <Icon className="w-6 h-6 text-gold-500" />

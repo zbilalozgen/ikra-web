@@ -8,30 +8,39 @@ The marketing/landing website for **İkra** — a Quran verses & Sahih hadith wi
 
 A polished, brand-accurate landing page plus the legally-required Privacy Policy and Support pages — so İkra can launch on the App Store and Google Play and convert visitors into installs.
 
-## Requirements
+## Current State
 
-### Validated
+✅ **v1.0 shipped 2026-06-01** — Production live at https://ikra-web.vercel.app/
 
-(None yet — ship to validate)
+The launch milestone delivered the full landing page (Hero / Features / Showcase / Stats), store-submission-ready legal pages (Privacy / Terms / Support), and the complete SEO surface (per-page metadata, dynamic OG image, sitemap, robots). 17/17 v1 requirements satisfied (UI-02 dark mode intentionally deferred per D-04). All 4 phases passed audit with zero blockers.
 
-### Active
+See `.planning/milestones/v1.0-SUMMARY.md` and `.planning/v1.0-MILESTONE-AUDIT.md` for the full record.
 
-- [ ] Landing page communicating İkra's purpose, features, and screenshots — brand-matched
-- [ ] App Store + Google Play store badges (placeholder links until launch)
-- [ ] Privacy Policy page (store submission requirement)
-- [ ] Support / Contact page (store submission requirement)
-- [ ] Terms of Service page
-- [ ] Responsive layout with dark mode matching the app's brand tokens
-- [ ] SEO: meta tags, Open Graph / social share cards, sitemap
-- [ ] Deployed to Vercel with production domain
+### Operator actions before App Store / Play submission
+- Replace placeholder store badges with official Apple + Google marketing SVGs
+- Fill real App Store / Google Play URLs in `components/StoreBadges.tsx`
+- Confirm `support@ikraapp.com` mailbox routes
+- Confirm or override Delaware governing law in `app/terms/page.tsx`
+- Run Lighthouse mobile audit (targets Perf 90 / A11y 95 / BP 95 / SEO 100)
+- Wire custom marketing domain when chosen (~10 min on Vercel)
+
+## Next Milestone Goals
+
+`v1.1` candidates (run `/gsd:new-milestone` to scope):
+- Real App Store / Google Play URLs after app submission goes live
+- Official Apple + Google badge SVGs
+- Custom domain
+- Post-launch SEO tuning + analytics opt-in
+- Animated counters on Stats, scroll-triggered reveals on Features
+- Schema.org structured data (Organization, MobileApplication)
 
 ### Out of Scope
 
-- Multi-language / i18n — English only for v1 (app supports 6, site stays single-language to ship fast)
+- Multi-language / i18n — English only (app supports 6, site stays single-language to ship fast)
 - Blog / CMS / content marketing — deferred
 - Waitlist / email capture — store badges chosen instead
-- Live app download links — app not yet published; badges are placeholders
 - RTL support — not needed for English-only site
+- Dark mode — dropped from v1 per D-04 (site is light-mode only)
 
 ## Context
 
@@ -53,10 +62,12 @@ A polished, brand-accurate landing page plus the legally-required Privacy Policy
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Next.js App Router + Tailwind + Vercel | Tailwind matches app design tokens; best Vercel DX/deploy; SSG for fast, SEO-friendly marketing pages | — Pending |
-| English only (no i18n) | Ship fast; English serves the global secondary audience; i18n deferrable | — Pending |
-| Store badges as placeholders | App is pre-launch; links filled in at launch | — Pending |
-| Landing + legal pages scope | Minimum needed to launch app stores and market | — Pending |
+| Next.js App Router + Tailwind + Vercel | Tailwind matches app design tokens; best Vercel DX/deploy; SSG for fast, SEO-friendly marketing pages | ✅ Validated v1.0 |
+| English only (no i18n) | Ship fast; English serves the global secondary audience; i18n deferrable | ✅ Validated v1.0 |
+| Store badges as placeholders | App is pre-launch; links filled in at launch | ✅ Validated v1.0 — placeholder pills + TODO comments |
+| Landing + legal pages scope | Minimum needed to launch app stores and market | ✅ Validated v1.0 |
+| Dark mode dropped from v1 (D-04) | Reduce scope; light-mode-only ships faster; can revisit | ✅ Validated v1.0 |
+| Tailwind v4 `@theme` (no config.js) | Match app's token shape via CSS variables, future-proof | ✅ Validated v1.0 |
 
 ## Evolution
 
@@ -76,4 +87,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-05-25 after initialization*
+*Last updated: 2026-06-01 after v1.0 milestone completion*

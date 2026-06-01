@@ -12,7 +12,7 @@
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation & Deployable Skeleton** - Brand-themed Next.js + Tailwind shell live on Vercel
+- [x] **Phase 1: Foundation & Deployable Skeleton** - Brand-themed Next.js + Tailwind shell live on Vercel
 - [ ] **Phase 2: Landing Page Content** - Hero, features, screenshots, store badges, and stats
 - [ ] **Phase 3: Legal & Support Pages** - Privacy Policy, Terms of Service, and Support/Contact
 - [ ] **Phase 4: Polish & SEO Launch-Readiness** - Responsive QA, motion, meta/OG, and sitemap
@@ -31,7 +31,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   4. Production domain is configured, or the Vercel default domain is documented in README
 **Plans**: 2 plans
   - [x] 01-01-PLAN.md — Scaffold Next.js + Tailwind v4 with brand `@theme` tokens; skeleton home page; global Footer; stub routes `/privacy`, `/terms`, `/support`
-  - [ ] 01-02-PLAN.md — Git init + GitHub push; Vercel git-push auto-deploy; production URL documented in README
+  - [x] 01-02-PLAN.md — Git init + GitHub push; Vercel git-push auto-deploy; production URL documented in README
 **UI hint**: yes
 
 ### Phase 2: Landing Page Content
@@ -82,7 +82,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Deployable Skeleton | 1/2 | In progress | - |
+| 1. Foundation & Deployable Skeleton | 2/2 | Complete | 2026-06-01 |
 | 2. Landing Page Content | 0/TBD | Not started | - |
 | 3. Legal & Support Pages | 0/TBD | Not started | - |
 | 4. Polish & SEO Launch-Readiness | 0/TBD | Not started | - |
